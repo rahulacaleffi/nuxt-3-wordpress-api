@@ -12,7 +12,7 @@ You can `useFetch` to universally fetch data from any URL.
 
 ```vue
 <script setup>
-const { data: posts } = await useFetch('https://api.nuxtjs.dev/posts');
+const { data: posts } = await useFetch("https://api.nuxtjs.dev/posts");
 </script>
 
 <template>
@@ -53,7 +53,7 @@ This behaves identically to useFetch with the `lazy: true` option set, so the as
 </template>
 
 <script setup>
-const { pending, data: posts } = useLazyFetch('https://api.nuxtjs.dev/posts');
+const { pending, data: posts } = useLazyFetch("https://api.nuxtjs.dev/posts");
 watch(posts, (newPosts) => {
   // Because posts starts out null, you won't have access
   // to its contents immediately, but you can watch it.
@@ -85,7 +85,7 @@ export default defineEventHandler(() => {
 
 ```vue
 <script setup>
-const { data } = await useAsyncData('count', () => $fetch('/api/count'));
+const { data } = await useAsyncData("count", () => $fetch("/api/count"));
 </script>
 
 <template>

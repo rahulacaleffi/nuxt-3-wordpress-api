@@ -1,11 +1,6 @@
 <template>
   <div class="justify-center w-full md:flex">
-    <SideNav
-      v-if="toggleOpen"
-      :tabs="tabs"
-      :currentRoute="currentRoute"
-      @toggleOpen="toggleOpen = $event"
-    />
+    <SideNav v-if="toggleOpen" :tabs="tabs" :currentRoute="currentRoute" @toggleOpen="toggleOpen = $event" />
     <div v-else class="p-8">
       <img @click="toggleOpen = true" src="/menu-open.png" class="h-7" />
     </div>
@@ -22,41 +17,45 @@ export default {
       toggleOpen: true,
       tabs: [
         {
-          title: 'Server Routes',
-          path: '/server-routes',
+          title: "Home",
+          path: "/",
+        },
+        {
+          title: "Server Routes",
+          path: "/server-routes",
         },
 
         {
-          title: 'Teleports',
-          path: '/teleports',
+          title: "Teleports",
+          path: "/teleports",
         },
         {
-          title: 'Middleware',
-          path: '/middleware',
+          title: "Middleware",
+          path: "/middleware",
         },
         {
-          title: 'Nuxt on the Edge',
-          path: '/edge-functions',
+          title: "Nuxt on the Edge",
+          path: "/edge-functions",
         },
         {
-          title: 'Nuxt Loading Indicator',
-          path: '/nuxt-loading-indicator',
+          title: "Nuxt Loading Indicator",
+          path: "/nuxt-loading-indicator",
         },
         // {
         // 	title: 'Image Optimization',
         // 	path: '/image'
         // },
         {
-          title: 'Nuxt Link',
-          path: '/nuxt-link-component',
+          title: "Nuxt Link",
+          path: "/nuxt-link-component",
         },
         {
-          title: 'Nuxt Content',
-          path: '/nuxt-content',
+          title: "Nuxt Content",
+          path: "/nuxt-content",
         },
         {
-          title: 'Data Fetching',
-          path: '/data-fetching',
+          title: "Data Fetching",
+          path: "/data-fetching",
         },
       ],
     };
