@@ -1,75 +1,32 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 Kitchen Sink Template
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This template is an open-source, customizable template built with Nuxt 3 and Tailwind CSS. It showcases how all Nuxt 3 features work with zero configuration on Vercel.
 
-## Setup
+Look at the [Nuxt 3 documentation](https://nuxt.com) to learn more.
 
-Make sure to install the dependencies:
+## Supported Features
 
-```bash
-# npm
-npm install
+- Server-Side Rendering (SSR)
+- Server Routes
+- Teleports
+- Middleware
+- Edge Rendering
+- Nuxt Loading Indication
+- `NuxtLink`
+- `NuxtContent`
+- Data Fetching
 
-# pnpm
-pnpm install
+## Deploy Your Own
 
-# yarn
-yarn install
-
-# bun
-bun install
-```
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnuxt3-kitchen-sink&project-name=nuxt3&repository-name=nuxt3&demo-title=Nuxt%203%20Kitchen%20Sink&demo-url=https%3A%2F%2Fnuxt3-kitchen-sink.vercel.app%2F&demo-image=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Fv1673746665%2Fnuxt3_pkwbk6.png)
 
 ## Development Server
 
-Start the development server on `http://localhost:3000`:
+Start the development server on http://localhost:3000
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+git clone https://github.com/vercel/nuxt3-kitchen-sink.git
+cd nuxt3-kitchen-sink
+pnpm i
+pnpm dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
